@@ -1,0 +1,1 @@
+gsap.from('.section' , { duration: 1 , x: '-200%' })
