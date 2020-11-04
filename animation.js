@@ -18,6 +18,7 @@ gsap.from(".arrow", {
     delay: 3.5,
   });
 gsap.fromTo(".h1", { opacity: 0 }, { duration: 1, delay: 0, opacity: 1 });
+gsap.fromTo(".h2", { opacity: 0 }, { duration: 1, delay: 0, opacity: 1 });
 gsap.from("li", { duration: 2, opacity: 0});
 gsap.to(".arrow", {
   scrollTrigger: {
@@ -52,7 +53,9 @@ gsap.from(".computer", {
   scrollTrigger: {
     trigger: ".computer",
     start: "top bottom",
-    scrub: 0.5,
+    end: " bottom 100px",
+    markers: true,
+    scrub: 1,
   },
   opacity: 0.5,
   x: -200,
@@ -62,7 +65,7 @@ gsap.from(".info", {
   scrollTrigger: {
     trigger: ".computer",
     start: "top bottom",
-    scrub: 0.5,
+    scrub: 1,
   },
   opacity: 0.5,
   x: 200,
@@ -72,7 +75,7 @@ gsap.from(".computer3", {
   scrollTrigger: {
     trigger: ".computer3",
     start: "top bottom",
-    scrub: 0.5,
+    scrub: 1,
   },
   opacity: 0.5,
   x: -200,
@@ -82,7 +85,7 @@ gsap.from(".info3", {
   scrollTrigger: {
     trigger: ".computer3",
     start: "top bottom",
-    scrub: 0.5,
+    scrub: 1,
   },
   opacity: 0.5,
   x: 200,
@@ -92,7 +95,7 @@ gsap.from(".computer2", {
   scrollTrigger: {
     trigger: ".computer2",
     start: "top bottom",
-    scrub: 0.5,
+    scrub: 1,
   },
   opacity: 0.5,
   x: 200,
@@ -102,7 +105,7 @@ gsap.from(".info2", {
   scrollTrigger: {
     trigger: ".computer2",
     start: "top bottom",
-    scrub: 0.5,
+    scrub: 1,
   },
   opacity: 0.5,
   x: -200,
