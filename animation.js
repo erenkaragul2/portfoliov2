@@ -54,7 +54,7 @@ gsap.from(".computer", {
     trigger: ".computer",
     start: "top bottom",
     end: " bottom 100px",
-    markers: true,
+    
     scrub: 1,
   },
   opacity: 0.5,
