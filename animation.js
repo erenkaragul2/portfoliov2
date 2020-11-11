@@ -3,14 +3,14 @@ gsap.from(".btn1", {
   x: "-400%",
   opacity: 0,
   ease: "power2",
-  delay: 1.15,
+  delay: 0.15,
 });
 gsap.from(".btn2", {
   duration: 3,
   x: "400%",
   opacity: 0,
   ease: "power2",
-  delay: 1.15,
+  delay: 0.15,
 });
 gsap.from(".arrow", {
     duration: 1,
@@ -19,7 +19,7 @@ gsap.from(".arrow", {
   });
 gsap.fromTo(".h1", { opacity: 0 }, { duration: 1, delay: 0, opacity: 1 });
 gsap.fromTo(".h2", { opacity: 0 }, { duration: 1, delay: 0, opacity: 1 });
-gsap.from("li", { duration: 2, opacity: 0});
+gsap.from("li", { duration: 1, opacity: 0});
 gsap.to(".arrow", {
   scrollTrigger: {
     trigger: ".arrow",
@@ -46,68 +46,66 @@ gsap.to(".projects", {
     start: "top bottom",
     scrub: 1,
   },
-  x: 400,
-  duration: 3,
+  x: 500,
+  duration: 1,
 });
 gsap.from(".computer", {
   scrollTrigger: {
-    trigger: ".computer",
+    trigger: ".cmpt",
     start: "top bottom",
-    end: " bottom 100px",
-    
     scrub: 1,
   },
   opacity: 0.5,
   x: -200,
-  duration: 1,
+  duration: 0.5,
 });
 gsap.from(".info", {
   scrollTrigger: {
-    trigger: ".computer",
+    trigger: ".cmpt",
     start: "top bottom",
     scrub: 1,
   },
   opacity: 0.5,
   x: 200,
-  duration: 1,
+  duration: 0.5,
 });
 gsap.from(".computer3", {
   scrollTrigger: {
-    trigger: ".computer3",
+    trigger: ".cmpt3",
     start: "top bottom",
     scrub: 1,
   },
   opacity: 0.5,
   x: -200,
-  duration: 1,
+  duration: 0.5,
 });
 gsap.from(".info3", {
   scrollTrigger: {
-    trigger: ".computer3",
+    trigger: ".cmpt3",
     start: "top bottom",
     scrub: 1,
   },
   opacity: 0.5,
   x: 200,
-  duration: 1,
+  duration: 0.5,
 });
 gsap.from(".computer2", {
   scrollTrigger: {
-    trigger: ".computer2",
+    trigger: ".cmpt2",
     start: "top bottom",
-    scrub: 1,
+    scrub: 1  ,
   },
   opacity: 0.5,
   x: 200,
-  duration: 1,
+  duration: 0.5,
 });
 gsap.from(".info2", {
   scrollTrigger: {
-    trigger: ".computer2",
+    trigger: ".cmpt2",
     start: "top bottom",
     scrub: 1,
   },
   opacity: 0.5,
   x: -200,
-  duration: 1,
+  duration: 0.5,
 });

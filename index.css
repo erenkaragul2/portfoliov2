@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,900;1,200;1,400&display=swap");
+html {
+  overflow-x: hidden;
+}
 body {
   width: 100%;
   font-family: "Helvetica Neue", sans-serif;
@@ -7,6 +10,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -52,6 +56,9 @@ nav ul li a:hover {
 }
 .first {
   margin-right: 60%;
+}
+.hersec {
+  width: 100%;
 }
 .section {
   text-align: center;
@@ -267,6 +274,8 @@ footer > h1 {
   font-weight: 200;
   line-height: 1.5rem;
   text-align: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 .avaible {
   font-size: 1rem;
@@ -284,35 +293,32 @@ footer > h1 {
   width: 100%;
   height: 100vh;
   position: relative;
-  margin-bottom: 200px;
+  padding-top: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
 }
 .cmpt2 {
   width: 100%;
   height: 100vh;
+  padding-top: 200px;
   position: relative;
-  margin-bottom: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
   flex-direction: row-reverse;
 }
 .cmpt3 {
   width: 100%;
   height: 100vh;
+  padding-top: 200px;
   position: relative;
-  margin-bottom: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
 }
 .computer {
   position: relative;
@@ -566,6 +572,19 @@ a > span {
   }
   footer > h1 > span {
     display: none;
+  }
+  .first {
+    display: block;
+    position: absolute;
+    top: 10;
+    left: 10;
+  }
+  .aboutp {
+    margin-bottom: 75px;
+    margin-top: 75px;
+  }
+  .projects > h2 {
+    font-size: 90px;
   }
 }
 #nav:checked + .nav-open {
