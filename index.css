@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,900;1,200;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 html {
   overflow-x: hidden;
 }
@@ -13,6 +14,8 @@ body {
   height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  color: white !important;
+  background-color: black;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
@@ -62,15 +65,15 @@ nav ul li a:hover {
 }
 .section {
   text-align: center;
-  width: 50%;
-  margin-left: 25%;
+  width: 80%;
+  margin-left: 10%;
   margin-top: 100px;
 }
 .section h1 {
   position: relative;
-  font-size: 50px;
+  font-size: 75px;
   font-weight: 900;
-  font-style: italic;
+  color: white;
 }
 .section p {
   color: gray;
@@ -84,6 +87,7 @@ nav ul li a:hover {
   margin: auto;
   padding: 19px 22px;
   transition: all 0.2s ease;
+  color: white;
 }
 .btn-dark:before {
   content: "";
@@ -113,7 +117,7 @@ nav ul li a:hover {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #111;
+  stroke: white;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
@@ -133,7 +137,7 @@ nav ul li a:hover {
   margin: auto;
   padding: 19px 22px;
   transition: all 0.2s ease;
-  color: black;
+  color: white;
 }
 .btn-light:before {
   content: "";
@@ -142,7 +146,7 @@ nav ul li a:hover {
   left: 0;
   display: block;
   border-radius: 28px;
-  background: rgba(255, 171, 157, 0.5);
+  background: rgb(255, 172, 157);
   width: 56px;
   height: 56px;
   transition: all 0.3s ease;
@@ -163,7 +167,7 @@ nav ul li a:hover {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #111;
+  stroke: white;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
@@ -197,7 +201,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Merriweather", serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 nav > div > ul > .first > a {
   font-family: "Merriweather", serif;
@@ -274,20 +278,53 @@ footer > h1 {
   font-weight: 200;
   line-height: 1.5rem;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 200px;
+}
+.aboutp > p {
+  color: white;
 }
 .avaible {
   font-size: 1rem;
   font-style: italic;
 }
 .aboutimg {
-  margin: 100px;
-  margin-left: 25vw;
+  position: relative;
   width: 50vw;
   height: 50vw;
-  background-color: black;
+  margin-left: 25vw;
+  background-color: white;
   border-radius: 50%;
+}
+.aboutimg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50%;
+  background: #6be6b0;
+  width: 50%;
+  height: 50%; }
+.aboutimg::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    display: block;
+    border-radius: 50%;
+    background: rgb(255, 172, 157);
+    width: 30%;
+    height: 30%;
+    z-index: 2; }
+.aboutimg > img {
+  position: relative;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 20%;
+  border: none;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 .cmpt {
   width: 100%;
@@ -436,7 +473,10 @@ footer > div {
 }
 a > span {
   z-index: 5;
+
 }
+
+
 @media screen and (max-width: 560px) {
   .nav-container {
     position: fixed;

@@ -5,6 +5,13 @@ gsap.from(".btn1", {
   ease: "power2",
   delay: 0.15,
 });
+gsap.from(".newanimation", {
+  duration: 3,
+  opacity: 0,
+  y: "-100%",
+  ease: "power2",
+  delay: 3.5,
+});
 gsap.from(".btn2", {
   duration: 3,
   x: "400%",
@@ -109,3 +116,5 @@ gsap.from(".info2", {
   x: -200,
   duration: 0.5,
 });
+
+
