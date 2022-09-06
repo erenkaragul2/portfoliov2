@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,900;1,200;1,400&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 html {
   overflow-x: hidden;
 }
@@ -14,8 +15,8 @@ body {
   height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  color: white !important;
-  background-color: black;
+  color: #0D0D0D !important;
+  background-color: #F2E7DC;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
@@ -29,6 +30,7 @@ body::-webkit-scrollbar {
 nav {
   padding: 30px;
   width: 100%;
+  z-index: 5;
 }
 nav ul {
   text-align: center;
@@ -44,7 +46,7 @@ nav ul li:not(:first-child) {
 nav ul li a {
   display: inline-block;
   outline: none;
-  color: #1f2227;
+  color: #0D0D0D;
   font-size: 16px;
   text-decoration: none;
   letter-spacing: 0.04em;
@@ -62,18 +64,21 @@ nav ul li a:hover {
 }
 .hersec {
   width: 100%;
+  z-index: 5;
 }
 .section {
   text-align: center;
   width: 80%;
   margin-left: 10%;
   margin-top: 100px;
+  z-index: 5;
 }
 .section h1 {
   position: relative;
   font-size: 75px;
   font-weight: 900;
-  color: white;
+  color: #0D0D0D;
+  z-index: 5;
 }
 .section p {
   color: gray;
@@ -87,7 +92,7 @@ nav ul li a:hover {
   margin: auto;
   padding: 19px 22px;
   transition: all 0.2s ease;
-  color: white;
+  color: #0D0D0D;
 }
 .btn-dark:before {
   content: "";
@@ -96,7 +101,7 @@ nav ul li a:hover {
   left: 0;
   display: block;
   border-radius: 28px;
-  background: #6be6b0;
+  background: #027373;
   width: 56px;
   height: 56px;
   transition: all 0.3s ease;
@@ -117,14 +122,14 @@ nav ul li a:hover {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: white;
+  stroke: #0D0D0D;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
 .btn-dark:hover:before {
   width: 100%;
-  background: #6be6b0;
+  background: #027373;
 }
 .btn-dark:hover svg {
   transform: translateX(0);
@@ -137,7 +142,7 @@ nav ul li a:hover {
   margin: auto;
   padding: 19px 22px;
   transition: all 0.2s ease;
-  color: white;
+  color: #0D0D0D;
 }
 .btn-light:before {
   content: "";
@@ -146,7 +151,7 @@ nav ul li a:hover {
   left: 0;
   display: block;
   border-radius: 28px;
-  background: rgb(255, 172, 157);
+  background: #A9D9D0;
   width: 56px;
   height: 56px;
   transition: all 0.3s ease;
@@ -167,14 +172,14 @@ nav ul li a:hover {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: white;
+  stroke: #0D0D0D;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
 .btn-light:hover:before {
   width: 100%;
-  background: #ffab9d;
+  background: #A9D9D0;
 }
 .btn-light:hover svg {
   transform: translateX(0);
@@ -282,7 +287,7 @@ footer > h1 {
   margin-bottom: 200px;
 }
 .aboutp > p {
-  color: white;
+  color: #0D0D0D;
 }
 .avaible {
   font-size: 1rem;
@@ -293,7 +298,7 @@ footer > h1 {
   width: 50vw;
   height: 50vw;
   margin-left: 25vw;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 50%;
 }
 .aboutimg::before {
@@ -303,7 +308,7 @@ footer > h1 {
   left: 0;
   display: block;
   border-radius: 50%;
-  background: #6be6b0;
+  background: #027373;
   width: 50%;
   height: 50%; }
 .aboutimg::after {
@@ -313,7 +318,7 @@ footer > h1 {
     left: 70%;
     display: block;
     border-radius: 50%;
-    background: rgb(255, 172, 157);
+    background: #A9D9D0;
     width: 30%;
     height: 30%;
     z-index: 2; }
@@ -455,7 +460,7 @@ footer > div {
 .contact-btn {
   padding: 12px 24px 12px 24px;
   border-radius: 20px;
-  background-color: #6be6b0;
+  background-color: #027373;
   position: relative;
   font-size: 16px;
   line-height: 18px;
@@ -475,8 +480,71 @@ a > span {
   z-index: 5;
 
 }
+.yuvarlak {
+  position: relative;
+}
+.y1 {
+  width: 100px;
+  height: 100px;
+  background-color: #A9D9D0;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  z-index: 2;
+  border-radius: 50%;
+}
+.y2 {
+  width: 250px;
+  height: 250px;
+  background-color: #027373;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  z-index: 1;
+  border-radius: 50%;
+}
+.y3 {
+  width: 100px;
+  height: 100px;
+  background-color: #A9D9D0;
+  position: absolute;
+  top: 15rem;
+  left: 17rem;
+  z-index: 2;
+  border-radius: 50%;
+}
+.c1 , .c2{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.c2 {
+  justify-content: end;
+  margin-top: 10vh;
+}
+.c1>a , .c2 > a{
+  width: 40%;
+}
+.c1 >a> img , .c2 >a> img{
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+.c1txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 2.7vw;
+  font-family: "Merriweather", serif;
+}
 
-
+.c1txt > h3,h5 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.2vw;
+  margin: 3vh;
+}
 @media screen and (max-width: 560px) {
   .nav-container {
     position: fixed;
