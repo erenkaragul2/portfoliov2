@@ -587,6 +587,17 @@ a > span {
 .alinks {
   margin-top: 0;
 }
+.section > p {
+  position: relative;
+  z-index: 5;
+  color: #0D0D0D;
+}
+.c1txt > h3,h5 {
+  margin: 1vh;
+}
+#c3 {
+  margin-top: 10vh;
+}
 }
 @media screen and (max-width: 560px) {
   .nav-container {
