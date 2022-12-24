@@ -598,6 +598,9 @@ a > span {
 #c3 {
   margin-top: 10vh;
 }
+.first>a {
+  display: none;
+}
 }
 @media screen and (max-width: 560px) {
   .nav-container {
